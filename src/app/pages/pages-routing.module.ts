@@ -43,9 +43,6 @@ const routes: Routes = [{
     path: 'miscellaneous',
     loadChildren: './miscellaneous/miscellaneous.module#MiscellaneousModule',
   }, {
-    path: 'laporan',
-    loadChildren: './laporan/laporan.module#LaporanModule',
-  }, {
     path: '',
     redirectTo: 'dashboard',
     pathMatch: 'full',
