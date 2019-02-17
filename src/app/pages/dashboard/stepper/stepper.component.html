@@ -1,0 +1,32 @@
+<nb-card class="col-xxl-12">
+  <nb-card-header>
+    3 LANGKAH UNTUK MEMULAI MENGGUNAKAN PlasaUKM
+  </nb-card-header>
+  <nb-card-body>
+    <nb-stepper orientation="horizontal">
+      <nb-step [label]="labelOne">
+        <ng-template #labelOne>First step</ng-template>
+        <h3>Tambah Produk</h3>
+        <button nbButton disabled nbStepperNext>prev</button>
+        <button nbButton nbStepperNext>next</button>
+      </nb-step>
+      <nb-step [label]="labelTwo">
+        <ng-template #labelTwo>Second step</ng-template>
+        <h3>Log In ke Aplikasi PlasaUKM di Tablet/Smartphone</h3>
+        <button nbButton nbStepperPrevious>prev</button>
+        <button nbButton nbStepperNext>next</button>
+      </nb-step>
+      <nb-step label="Third step">
+        <h3>Lakukan Transaksi Pertama Anda</h3>
+        <button nbButton nbStepperPrevious>prev</button>
+        <button nbButton nbStepperNext>selesai</button>
+      </nb-step>
+      <nb-step [hidden]="true">
+        <div class="step-container">
+          <h3>Selesai! Selamat menggunakan layanan kami.</h3>
+          <button nbButton (click)="ng.close()">Tutup</button>
+        </div>
+      </nb-step>
+    </nb-stepper>
+  </nb-card-body>
+</nb-card>
